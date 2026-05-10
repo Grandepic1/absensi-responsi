@@ -1,5 +1,5 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 $kelas = mysqli_real_escape_string($conn, trim($_POST['kelas']));
 $id = mysqli_real_escape_string($conn, trim($_GET['id']));
@@ -18,5 +18,5 @@ $kelasUpper = strtoupper($kelas);
 
 $sql = "UPDATE kelas SET nama='$kelas' WHERE id='$id'";
 if (mysqli_query($conn, $sql)) {
-    header("Location: kelas.php");
+    header("Location: index.php");
 }

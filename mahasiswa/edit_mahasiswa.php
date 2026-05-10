@@ -1,5 +1,5 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 $id = $_GET['id'];
 
 $resultMhs = mysqli_query($conn, "SELECT * FROM mahasiswa WHERE id='$id'");

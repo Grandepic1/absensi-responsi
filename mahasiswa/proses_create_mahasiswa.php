@@ -1,15 +1,16 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 $nama = mysqli_real_escape_string($conn, trim($_POST['nama']));
 $kelas = mysqli_real_escape_string($conn, trim($_POST['kelas']));
 $nim = mysqli_real_escape_string($conn, trim($_POST['nim']));
 
-function ifEmpty($data, $input){
+function ifEmpty($data, $input)
+{
     if (empty($input)) {
-        echo $data." is required";
+        echo $data . " is required";
         exit();
-    } 
+    }
 }
 
 ifEmpty("nama", $nama);
@@ -19,6 +20,5 @@ ifEmpty("nim", $nim);
 
 $sql = "INSERT INTO mahasiswa (nama, nim, idKelas) VALUE ('$nama', '$nim', '$kelas')";
 if (mysqli_query($conn, $sql)) {
-    header("Location: mahasiswa.php");
+    header("Location: index.php");
 }
-?>

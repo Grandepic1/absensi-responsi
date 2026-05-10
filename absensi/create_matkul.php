@@ -1,5 +1,5 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY nama");
 
@@ -15,7 +15,7 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY nama");
 </head>
 
 <body>
-    <h2>Form Tambah Mahasiswa</h2>
+    <h2>Form Tambah Mata Kuliah</h2>
     <form action="proses_create_absensi.php" method="post">
         <label for="mata kuliah">Input Mata Kuliah : </label>
         <input type="text" name="matkul" id=""><br>

@@ -1,5 +1,5 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 $sql = "SELECT a.matkul, a.dosen, a.tanggal, m.nama FROM mahasiswa_absensi ma INNER JOIN mahasiswa m ON ma.idMahasiswa = m.id INNER JOIN absensi a ON a.id = ma.idAbsensi";
 $result = mysqli_query($conn, $sql);
@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $sql);
 
 <body>
     <h1>Data Absensi</h1>
-    <a href="create_absensi.php">Tambah Absensi</a><br>
+    <a href="create_matkul.php">Tambah Matkul</a><br>
     <table border="1">
         <thead>
             <tr>

@@ -1,5 +1,5 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 $sql = "SELECT * FROM kelas";
 $result = mysqli_query($conn, $sql);
@@ -13,9 +13,9 @@ $result = mysqli_query($conn, $sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelas</title>
     <script>
-        function confirmationDelete(id){
-            if (confirm("Apakah anda yakin?")){
-                window.location.href = "delete_kelas.php?id="+id;
+        function confirmationDelete(id) {
+            if (confirm("Apakah anda yakin?")) {
+                window.location.href = "delete_kelas.php?id=" + id;
             }
         }
     </script>

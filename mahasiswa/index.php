@@ -1,5 +1,5 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 $sql = "SELECT m.id,m.nama as 'nama_mhs', m.nim, k.nama as 'nama_kls' FROM mahasiswa m INNER JOIN kelas k ON m.idKelas = k.id";
 $result = mysqli_query($conn, $sql);

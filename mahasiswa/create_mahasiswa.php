@@ -1,5 +1,5 @@
 <?php
-require_once "koneksi.php";
+require_once "../koneksi.php";
 
 $result = mysqli_query($conn, "SELECT * FROM kelas ORDER BY nama");
 

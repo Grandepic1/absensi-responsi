@@ -9,9 +9,9 @@
 
 <body>
     <h1>Web Absensi</h1>
-    <a href="mahasiswa.php">Data Mahasiswa</a><br>
-    <a href="kelas.php">Data Kelas</a><br>
-    <a href="absensi.php">Data Absensi</a>
+    <a href="mahasiswa/">Data Mahasiswa</a><br>
+    <a href="kelas/">Data Kelas</a><br>
+    <a href="absensi/">Data Absensi</a>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-<?php 
-require_once "koneksi.php";
+<?php
+require_once "../koneksi.php";
 $id = $_GET['id'];
 
 $result = mysqli_query($conn, "SELECT * FROM kelas WHERE id = '$id'");
